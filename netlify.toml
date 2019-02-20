@@ -1,5 +1,5 @@
 [build]
-publish = "/de"
+publish = "layouts/de"
 command = "hugo --gc --minify"
 
 [context.production.environment]
