@@ -28,3 +28,15 @@ HUGO_VERSION = "0.54.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[Languages.de]
+languageName = "DE"
+identifier = "de"
+url = "/de"
+weight = 2
+
+[[Languages.de.menu.shortcuts]]
+name = "DE"
+identifier = "de"
+url = "/de"
+weight = 2
