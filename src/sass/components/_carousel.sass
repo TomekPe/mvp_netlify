@@ -1,0 +1,48 @@
+// Carousel
+//
+// Markup: html/carousel.html
+//
+// Styleguide carousel
+
+// Modifiers
+// --------------------------------------------------
+.owl-carousel
+  position: relative
+
+  .owl-item
+    position: relative
+
+  .owl-controls
+    margin-top: 30px
+
+    .owl-nav
+
+      > div
+        background: $blue-light !important
+        border-radius: 50% !important
+        position: absolute
+        padding: 10px !important
+        top: 30%
+
+        &:hover
+          background: darken($blue-light, 5%) !important
+
+        .glyphicon
+          color: #fff
+          display: block
+          font-size: 20px
+          width: 30px
+          height: 30px
+          top: 5px
+
+        &.owl-prev
+          left: 0
+
+          +breakpoint(tablet)
+            left: -20px
+
+        &.owl-next
+          right: 0
+
+          +breakpoint(tablet)
+            right: -20px

@@ -1,0 +1,170 @@
+// Component
+// --------------------------------------------------
+.package
+  background-color: #fff
+  border: 5px transparent solid
+  border-radius: 3px
+  padding: 17px 25px 10px 25px
+  cursor: pointer
+  min-height: 420px
+  +transition(all, 0.3s)
+
+  &:hover,
+  &:active,
+  &:focus
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2)
+
+// Elements
+// --------------------------------------------------
+.package__columns
+  +breakpoint(desktop)
+    min-height: 465px
+
+.package__column
+  margin-bottom: 30px
+  max-width: 390px
+  margin-left: auto
+  margin-right: auto
+
+  &:last-of-type
+    margin-bottom: 0
+
+  +breakpoint(desktop)
+    margin-bottom: 0
+
+.package__name
+  color: $gray-darkest
+  font-size: 28px
+  text-transform: none
+  margin: 0 0 10px
+  padding: 0
+
+  &:before
+    @extend .icon
+    display: block
+    +rotate(30deg)
+    margin-bottom: 25px
+
+
+.package__options
+  list-style: none
+  padding: 0
+  margin: 0
+
+.package__options-item
+  color: $gray-light
+  list-style: none
+  border-bottom: 1px $gray-lighter solid
+  font-size: $font-size-large
+  padding: 7px 0
+
+  &:last-child
+    border-bottom: none
+
+.package__additional-info
+  color: $gray-light
+  font-size: $font-size-small
+  margin: 15px 0 5px
+
+.package__descriptions
+  @extend .bg--1
+  padding: 40px 0 40px
+  margin-top: 60px
+  position: relative
+
+  &:before
+    content: ""
+    display: block
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 30px 30px 30px
+    border-color: transparent transparent #ebf2f5 transparent
+    position: absolute
+    top: -30px
+    left: 50%
+    +translate(-50%, 0)
+
+.package__description
+  color: $gray-light
+  display: none
+  font-size: 16px
+  line-height: 1.75em
+
+  &.active
+    display: block
+
+.package__description-name
+  color: $gray-darker
+  font-size: $font-size-small
+  font-weight: bold
+  text-transform: uppercase
+  margin-top: 15px
+  line-height: $line-height-base
+  margin-bottom: 30px
+  text-align: center
+
+  +breakpoint(tablet)
+    text-align: right
+    margin-bottom: 0
+    padding-right: 85px
+
+.package__description-buttons
+  margin-top: 32px
+  text-align: center
+
+  +breakpoint(tablet)
+    text-align: left
+
+  .btn
+    margin-top: 8px
+    margin-bottom: 8px
+    margin-right: 10px
+
+// Modifiers
+// --------------------------------------------------
+.package.active
+  +breakpoint(desktop)
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.2)
+    min-height: 485px
+    margin-top: -30px
+
+.package--basic
+  border-color: $blue-light
+
+  .package__name
+    &:before
+      @extend .icon--rocket-1:before
+
+  .package__options-item span
+    color: $blue-light
+
+.package__description-name--basic
+  color: $blue-light
+
+
+.package--mvp
+  border-color: $red
+
+  .package__name
+    &:before
+      @extend .icon--rocket-2:before
+
+  .package__options-item span
+    color: $red
+
+.package__description-name--mvp
+  color: $red
+
+.package--mvp-plus
+  border-color: $blue-dark
+
+  .package__name
+    &:before
+      @extend .icon--rocket-3:before
+
+  .package__options-item span
+    color: $blue-dark
+
+.package__description-name--mvp-plus
+  color: $blue-dark

@@ -1,0 +1,137 @@
+en:
+  - name: "Plutio"
+    image: "plutio.jpg"
+    description: "All-in-one business app. You no longer have to switch between
+    apps to get work done. Plutio brings everything you need into one place."
+    url: "https://plutio.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - react
+    - redux
+  - name: "Uberchord"
+    image: "uberchord.jpg"
+    description: "Practice guitar chords with real-time feedback on your fingering,
+    accuracy and timing and get personal progress statistics. Uberchord listens
+    to you play and seamlessly adapts to your skill level."
+    url: "https://music.uberchord.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - react
+  - name: "Timmi"
+    image: "timmi.jpg"
+    description: "TiMMi ist eine Plattform, die Auftraggeber von Lieferungen
+    und Transporteure miteinander verbindet. Timmi ist vor allem im Leipziger
+    Raum aktiv, aber die Gründer planen schon die Ausweitung des Dienstes auf andere Städte"
+    url: "https://www.timmitransport.de/"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - blaze
+  - name: "Trainersreview"
+    image: "tr.jpg"
+    description: "Browse thousands of independently rated courses, trainers,
+    and institutions from around the world, or find courses your colleagues have
+    attended, and learn from better trainers."
+    url: "https://trainersreview.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - drupal
+  - name: "Lingobites"
+    image: "Lingobites.png"
+    description: "LingoBites is a new way to practice English or Spanish using short stories written by talented authors from around the world. It is designed to help users learn a new language at their own pace."
+    url: "http://www.lingobites.com/"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - React Native
+    - Vue
+    - Graphcool
+  - name: "LayoutBuddy"
+    image: "layout_buddy.png"
+    description: "LayoutBuddy® is the easiest web2print design tool, that allows customers to design their print products online and create the best user experience and simplest integration for online print shop."
+    url: "https://www.layoutbuddy.com/"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - "React"
+    - "Redux"
+de:
+  - name: "Plutio"
+    image: "plutio.jpg"
+    description: "All-in-one business app. You no longer have to switch between
+    apps to get work done. Plutio brings everything you need into one place."
+    url: "https://plutio.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - react
+    - redux
+  - name: "Uberchord"
+    image: "uberchord.jpg"
+    description: "Practice guitar chords with real-time feedback on your fingering,
+    accuracy and timing and get personal progress statistics. Uberchord listens
+    to you play and seamlessly adapts to your skill level."
+    url: "https://music.uberchord.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - react
+  - name: "Timmi"
+    image: "timmi.jpg"
+    description: "TiMMi ist eine Plattform, die Auftraggeber von Lieferungen
+    und Transporteure miteinander verbindet. Timmi ist vor allem im Leipziger
+    Raum aktiv, aber die Gründer planen schon die Ausweitung des Dienstes auf andere Städte"
+    url: "https://timmi.io"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - meteor
+    - blaze
+  - name: "Trainersreview"
+    image: "tr.jpg"
+    description: "Browse thousands of independently rated courses, trainers,
+    and institutions from around the world, or find courses your colleagues have
+    attended, and learn from better trainers."
+    url: "https://trainersreview.com"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - drupal
+  - name: "LayoutBuddy"
+    image: "layout_buddy.png"
+    description: "LayoutBuddy® is the easiest web2print design tool, that allows customers to design their print products online and create the best user experience and simplest integration for online print shop."
+    url: "https://www.layoutbuddy.com/"
+    comment:
+    comment_author:
+    comment_author_position:
+    comment_author_photo:
+    tags:
+    - ""

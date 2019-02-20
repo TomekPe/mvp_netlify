@@ -1,0 +1,44 @@
+// Contact bar
+//
+// Markup: html/contact-bar.html
+//
+// Styleguide contact-bar
+
+// Component
+// --------------------------------------------------
+.contact-bar
+  background-image: url(../img/dotted-bg.png)
+  font-size: $font-size-small
+  color: $gray-lighter
+  line-height: 1.3em
+  padding-top: 20px
+  padding-bottom: 20px
+
+  @media (max-width: $screen-xs-max)
+    text-align: center
+
+// Modifiers
+// --------------------------------------------------
+
+// Dependencies
+// --------------------------------------------------
+.contact-bar
+  h4
+    color: #fff
+    font-weight: bold
+    line-height: 1.3em
+    margin-top: 0
+    margin-bottom: 10px
+
+  p
+    margin-bottom: 10px
+
+    &:last-of-type
+      margin-bottom: 0
+
+  .fa
+    margin-right: 5px
+
+  @media (max-width: $screen-xs-max)
+    .row > div:not(:last-of-type)
+      margin-bottom: 20px

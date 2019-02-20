@@ -1,0 +1,52 @@
+// Buttons
+//
+// Override of Bootstrap's buttons
+// @see http://getbootstrap.com/css/#buttons
+//
+// Markup: html/buttons.html
+//
+// .btn-xs    - Extreme small
+// .btn-sm    - Small
+// .btn-lg    - Large
+// .btn-block - Block
+//
+// Styleguide buttons
+
+// Component
+// --------------------------------------------------
+.btn
+  font-size: $font-size-base
+  border-radius: 5px
+  border: 2px solid transparent
+  text-align: center
+  padding: 10px 50px
+
+  +breakpoint(tablet)
+    padding: 10px 100px
+
+  &,
+  &:focus
+    box-shadow: none
+    outline: none
+
+// Modifiers
+// --------------------------------------------------
+.btn-default
+  border-color: #000
+
+  &:hover,
+  &:focus,
+  &.focus
+    border-color: #000
+
+.btn-primary
+  border-color: $btn-primary-border
+  border-bottom-color: darken($btn-primary-border, 5%)
+
+.btn-sm
+  padding-left: 30px
+  padding-right: 30px
+
+  @media (min-width: $screen-sm-min)
+    padding-left: 50px
+    padding-right: 50px

@@ -1,0 +1,91 @@
+// Component
+// --------------------------------------------------
+.how-we-work
+  background-color: #f6fafb;
+  +clearfix
+
+// Elements
+// --------------------------------------------------
+.how-we-work__left
+  +breakpoint(tablet)
+    float: left
+    width: 40%
+    background: url('../img/homepage-rocket.jpg') top right no-repeat
+    background-size: cover
+    min-height: 1710px
+
+  +breakpoint(desktop)
+    width: 50%
+
+.how-we-work__right
+  background-color: #fff
+  float: right
+  padding: 70px 15px
+  overflow: hidden
+
+  +breakpoint(tablet)
+    min-height: 1710px
+    width: 60%
+    padding: 70px
+
+  +breakpoint(desktop)
+    width: 50%
+
+  +breakpoint(lg-desktop)
+    padding: 70px 100px
+
+
+.how-we-work__item
+  margin-bottom: 55px
+  margin-left: 60px
+  position: relative
+
+  +breakpoint(tablet)
+    margin-left: 80px
+
+  &:last-of-type
+    &:before
+      border-color: #fff
+
+  &:before
+    content: ""
+    border-left: 1px $gray-lightest solid
+    width: 1px
+    height: 999%
+    position: absolute
+    top: 0
+    left: -41px
+
+    +breakpoint(tablet)
+      margin-left: -21px
+
+.how-we-work__name
+  color: $gray-darkest
+  font-size: 22px
+  margin-bottom: 5px
+
+.how-we-work__description
+  font-size: $font-size-small
+  line-height: 25px
+  text-align: justify
+
+// Dependencies
+// --------------------------------------------------
+.how-we-work__item .icon-circle
+  border-radius: 50%
+  display: inline-block
+  width: 40px
+  height: 40px
+  position: absolute
+  top: 0
+  left: -60px
+
+  +breakpoint(tablet)
+    left: -80px
+
+.how-we-work__item .icon
+  color: #fff
+  font-size: 40px
+  top: 0
+  left: 0
+  margin-top: 0

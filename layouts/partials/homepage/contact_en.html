@@ -1,0 +1,22 @@
+{{ "<!-- CONTACT SECTION -->" | safeHTML }}
+<div class="section contact contact--1" id="contact">
+  <div class="container">
+    <div class="section-heading section-heading--bottom-margin text-center">
+      <h2 class="section-heading__primary section-heading--underline">{{ with .Site.Params.en.homepage.contact.title }}{{ . }}{{ end }}</h2>
+    </div>
+
+    <div class="contact__content bg--2">
+      <div class="row row-md--flex">
+        <div class="col-md-4 col-lg-5 col-md--flex">
+          <div class="contact__get-a-quote">
+            {{ partial "blocks/contact-form_en.html" . }}
+          </div>
+        </div>
+        <!-- rest of the cities were hide -->
+        <div class="col-md-8 col-lg-7 col-md--flex">
+          {{ partial "blocks/contact-text.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

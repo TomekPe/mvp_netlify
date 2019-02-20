@@ -1,0 +1,190 @@
+// Contact
+//
+// Markup: html/contact.html
+//
+// Styleguide contact
+
+// Component
+// --------------------------------------------------
+.contact
+  background-color: #0d2f4c
+  color: $gray-lighter
+  font-size: $font-size-small
+  line-height: 1.4em
+
+  @media (max-width: $screen-xs-max)
+    text-align: center
+
+  +breakpoint(tablet)
+    background-attachment: scroll
+    background-position: center center
+    background-repeat: no-repeat
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    background-size: cover
+    -o-background-size: cover
+
+// Elements
+// --------------------------------------------------
+.contact__content
+  padding: 0 35px 25px 35px
+
+  +breakpoint(desktop)
+    padding: 0 0 0 35px
+
+.contact__get-a-quote
+  top: 50%
+
+.contact__description
+  color: $gray-light
+  margin-bottom: 30px
+  font-size: $font-size-base
+  line-height: 1.5
+  margin-top: 25px
+
+  +breakpoint(md)
+    margin-top: 0
+
+.contact__button
+  text-align: center
+  margin-bottom: 40px
+  display: table
+  margin-left: auto
+  margin-right: auto
+
+  +breakpoint(desktop)
+    margin-bottom: 0
+
+.contact__tabs
+  border: none
+  display: table
+  width: 100%
+
+.contact__tab
+  width: 100%
+  +breakpoint(tablet)
+    display: table-cell !important
+    float: none !important
+    text-align: center
+    width: auto
+
+.contact__tab-link
+  border: none !important
+  font-family: $font-family-sans-condensed
+  font-size: $font-size-xsmall
+  font-weight: bold
+  letter-spacing: 1px
+  color: #989b9c
+  text-transform: uppercase
+  padding: 20px 0 !important
+  margin-right: 0 !important
+
+  &:hover,
+  &:focus
+    background-color: #fff !important
+    border: none
+    color: $gray-darker
+
+.contact__tab.active
+  .contact__tab-link
+    background-color: #fff !important
+    border: none !important
+    border-radius: 0
+    color: $gray-darker
+
+.contact__tab-content
+  background-color: #fff
+  font-family: $font-family-sans-condensed
+  font-size: $font-size-xsmall
+  font-weight: bold
+  letter-spacing: 1px
+  color: #989b9c
+  text-transform: uppercase
+  padding: 35px 30px
+
+.contact__type-bottom
+  padding-bottom: 10px
+
+.contact__type
+  margin-bottom: 8px
+
+  &:last-of-type
+    margin-bottom: 0
+
+  .icon,
+  .fa
+    color: $gray-darkest
+
+  .icon
+    font-size: 24px
+
+  .icon--skype
+    font-size: 18px !important
+    top: 3px
+    left: 3px
+    margin-right: 6px
+
+.contact__address-type
+  display: table
+  margin-left: auto
+  margin-right: auto
+
+.contact__address-icon
+  display: table-cell !important
+
+.contact__address
+  display: table-cell
+
+.contact iframe
+  display: none
+
+  +breakpoint(tablet)
+    display: block
+
+
+// Dependencies
+// --------------------------------------------------
+.contact
+  .section-heading__primary,
+  .section-heading__secondary
+    color: #fff
+
+  h3, h4
+    color: $gray-darkest
+    font-size: $font-size-base
+    line-height: 1.4em
+
+  h3
+    margin-bottom: 20px
+
+  h4
+    margin-top: 50px
+
+  .fa
+    font-size: $font-size-h2
+    margin-right: 20px
+
+  strong
+    color: #fff
+    font-size: $font-size-large
+
+    span
+      color: $gray-lighter
+
+
+
+
+// Modifiers
+// --------------------------------------------------
++breakpoint(tablet)
+  .contact--1
+    background-image: url('../img/homepage-contact-bg--1.jpg')
+
+  .contact--2
+    background-image: url('../img/homepage-contact-bg--2.jpg')
+
+  .contact--3
+    background-image: url('../img/homepage-contact-bg--3.jpg')
+
+  .contact--4
+    background-image: url('../img/homepage-contact-bg--4.jpg')

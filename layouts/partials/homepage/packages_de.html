@@ -1,0 +1,49 @@
+{{ "<!-- PACKAGES SECTION -->" | safeHTML }}
+<div id="packages" class="section section--packages bg--2">
+  <div class="container">
+    <div class="section-heading section-heading--bottom-margin text-center">
+      <h2 class="section-heading__primary">{{ with .Site.Params.de.homepage.packages.title }}{{ . }}{{ end }}</h2>
+      <div class="section-heading__secondary text-muted">{{ with .Site.Params.de.homepage.packages.subtitle }}{{ . | markdownify }}{{ end }}</div>
+    </div>
+
+    <div class="package__columns row">
+      {{ range $index, $element := $.Site.Data.packages.de }}
+      <div class="col-md-4 package__column">
+        <div class="package package--{{ .machine_name }} {{ if eq .machine_name "mvp" }}active{{ end }} text-center">
+          <h2 class="package__name">{{ .name }}</h2>
+
+          <ul class="package__options">
+            {{ range .options }}
+            <li class="package__options-item">{{ . | safeHTML }}</li>
+            {{ end }}
+          </ul>
+
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="package__descriptions">
+    <div class="container">
+      {{ $packageText := .Site.Params.de.homepage.packages.packageText }}
+      {{ range $index, $element := $.Site.Data.packages.de }}
+      <div class="package__description package__description--{{ .machine_name }} {{ if eq .machine_name "mvp" }}active{{ end }}">
+        <div class="row">
+          <div class="col-sm-4 package__description-name">
+            <div class="package__description-name--{{ .machine_name }}">{{ .name }}</div>
+            {{ $packageText }}
+          </div>
+          <div class="col-sm-8 package__description-text text-justify">{{ .description }}</div>
+        </div>
+      </div>
+      {{ end }}
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-4 package__description-buttons">
+          <a class="btn btn-primary page-scroll" href="#how-we-work">{{ .Site.Params.de.homepage.packages.howweworkButtonText }}</a>
+          <a class="typeform-share button btn btn-warning page-scroll" href="https://kris183.typeform.com/to/ezCahW" data-mode="1" target="_blank">{{ .Site.Params.de.homepage.packages.contactButtonText }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

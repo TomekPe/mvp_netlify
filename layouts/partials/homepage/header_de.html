@@ -1,0 +1,20 @@
+{{ "<!-- HEADER SECTION -->" | safeHTML }}
+<header class="header header--homepage">
+  <div class="container">
+    <div class="header__content text-center">
+      <div class="header__text">
+        <h1>
+          {{ with .Site.Params.de.homepage.header.title }}{{ . | safeHTML }}{{ end }}
+        </h1>
+        {{ with .Site.Params.de.homepage.header.subtitle }}{{ . | safeHTML }}{{ end }}
+      </div>
+      <div class="header__subtext">
+        {{ with .Site.Params.de.homepage.header.description }}{{ . | safeHTML }}{{ end }}
+      </div>
+
+      <a class="header__button btn btn-warning btn-sm page-scroll" href="#about" data-mode="1" target="_blank">{{ with .Site.Params.de.homepage.header.buttonText }}{{ . }}{{ end }}</a>
+
+      {{ partial "blocks/social.html" . }}
+    </div>
+  </div>
+</header>

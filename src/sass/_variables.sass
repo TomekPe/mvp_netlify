@@ -1,0 +1,249 @@
+//
+// Bootstrap variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across site.
+
+//** Color declarations
+$gray-darkest: #000316
+$gray-darker: #282828
+$gray-dark: #4f5463
+$gray-base: #6e6e6e
+$gray-light: #929292
+$gray-lighter: #ebebeb
+$gray-lightest: #ebf2f5
+$almost-white: #f3f7f9
+
+$c1: #000316
+$c2: #282828
+$c3: #4f5463
+$c4: #6e6e6e
+$c5: #90939c
+$c6: #929292
+$c7: #92a2a3
+$c8: #ebebeb
+$c9: #ebf2f5
+$c10: #f3f7f9
+
+
+$blue: #1c81a2
+$blue-light: #15c9d9
+$blue-dark: #144b88
+$green: #00a651
+$red: #f8225e
+
+//** Primary brand colors assigment
+$brand-primary: $blue
+$brand-primary-darken: darken($brand-primary, 5%)
+$brand-success: $green
+$brand-danger: $red
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+$body-bg: transparent
+
+$text-color: $gray-base
+$link-color: $brand-primary
+$link-hover-color: $link-color
+$link-hover-decoration: underline
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-serif: "Crimson Text", Georgia, "Times New Roman", Times, serif
+$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif
+$font-family-sans-condensed: "Roboto Condensed", Helvetica, Arial, sans-serif
+$font-family-base: $font-family-sans-serif
+
+$font-size-base: 16px
+$font-size-large: 18px
+$font-size-small: 14px
+$font-size-xsmall: 12px
+
+$font-size-h1: 62px
+$font-size-h2: 34px
+$font-size-h3: 18px
+$font-size-h4: 16px
+
+$line-height-base:        1.5
+$line-height-computed:    floor(($font-size-base * $line-height-base))
+
+$font-weight-thin: 100
+$font-weight: 300
+$font-weight-medium: 500
+
+$headings-font-family: $font-family-sans-serif
+$headings-font-weight: 400
+
+$text-muted: $gray-light
+
+//== Components
+//
+//## Define common padding and border radius sizes and more.
+
+$padding-small-vertical: 4px
+$padding-large-vertical: 12px
+
+//** Z-indexes used across BootSMACSS components
+$z-index-1: 100
+$z-index-2: 101
+$z-index-3: 103
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding: $line-height-computed / 3
+$table-bg-header: $gray-lightest
+$table-bg-accent: $almost-white
+$table-border-color: $gray-light
+
+//== Buttons
+//
+//## Bootstrap's buttons.
+
+$btn-default-color:              #333
+$btn-default-bg:                 #fff
+$btn-default-border:             #ccc
+
+$btn-primary-color:              #fff
+$btn-primary-bg:                 $blue-light
+$btn-primary-border:             transparent
+
+$btn-warning-color:              #fff
+$btn-warning-bg:                 $red
+$btn-warning-border:             transparent
+
+//== Forms
+//
+//##
+
+$input-border-radius: 0
+$input-border-radius-large: 0
+$input-border-radius-small: 0
+$input-height-base: 40px
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+//** Additional XXS breakpoint provided by BootSMACSS
+$screen-xs: 480px
+$screen-xxs: 0
+$screen-xxs-min: $screen-xxs
+$sm-phone: $screen-xxs-min
+$screen-xxs-max: $screen-xs - 1
+
+//== Navs
+//
+//##
+
+//== Tabs
+$tabs-active-background: $brand-primary
+$tabs-accent: $brand-primary
+
+//== Tooltips
+//
+//##
+
+$tooltip-bg: $brand-primary
+
+//== Labels
+//
+//##
+
+$label-default-bg: $brand-primary
+
+//== Modals
+//
+//##
+
+$modal-lg: 1024px
+$modal-backdrop-bg: $gray-lighter
+$modal-backdrop-opacity: 0.9
+
+//== Panels
+//
+//##
+
+//** Panel group horizonta variables.
+$panel-group-horizontal-height: 450px
+$panel-group-horizontal-body-width: 210px
+$panel-group-horizontal-bg: white
+
+//== Breadcrumbs
+//
+//##
+
+$breadcrumb-color: white
+$breadcrumb-padding-vertical: 3px
+
+//== Carousel
+//
+//##
+
+$carousel-caption-bg: $brand-primary
+$carousel-controls-color: $brand-primary
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font.
+
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/")
+
+//
+// BootSMACSS variables
+// --------------------------------------------------
+
+//== Icons
+//
+//## Specify custom location and filename of the included waat icon font.
+
+$waat-icons-font-path: "../fonts/waat-icons"
+
+//== Logo
+//
+//## Standard logo sizing on desktop and minified on mobile
+
+$logo-width-mobile: 172px
+$logo-width-desktop: 172px
+$logo-height-mobile: 118px
+$logo-height-desktop: 118px
+
+//== Listing
+//
+//## Listing component media element sizing. Not neccesary when image styles are properly configured in backend
+
+$listing-media-width-phone: 160px
+$listing-media-height-phone: 145px
+$listing-media-width-desktop: 270px
+$listing-media-height-desktop: 145px
+
+//== Social links
+//
+//##
+
+$social-links-size: 50px
+$social-links-color: $brand-primary
+
+//== Ornament
+//
+//##
+
+$ornament-default: $brand-primary
+
+//== News carousel
+//
+//##
+$news-carousel-height: 400px
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+$state-danger-text: darken($red, 7%)

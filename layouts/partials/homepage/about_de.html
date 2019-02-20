@@ -1,0 +1,17 @@
+{{ "<!-- ABOUT SECTION -->" | safeHTML }}
+<div class="section section--about bg--1" id="about">
+  <div class="container">
+    <div class="section-heading section-heading--bottom-margin text-center">
+      <h2 class="section-heading__primary">{{ with .Site.Params.de.homepage.about.title }}{{ . }}{{ end }}</h2>
+      <div class="section-heading__secondary text-muted">{{ with .Site.Params.de.homepage.about.subtitle }}{{ . | markdownify }}{{ end }}</div>
+    </div>
+
+    <div class="section-content section-content--homepage limited-width text-justify">
+      {{ with .Site.Params.de.homepage.about.body }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+    <div class="text-center section-button--about">
+      <a class="btn btn-primary page-scroll" href="#contact">{{ .Site.Params.de.homepage.about.contactButtonText }}</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+{{ "<!-- OUR CLIENTS SECTION -->" | safeHTML }}
+<div class="section section--our-clients bg--white" id="our-partners">
+  <div class="container">
+    <div class="section-heading section-heading--bottom-margin text-center">
+      <h2 class="section-heading__primary">{{ with .Site.Params.de.homepage.partners.title }}{{ . }}{{ end }}</h2>
+      <div class="section-heading__secondary text-muted">{{ with .Site.Params.de.homepage.partners.subtitle }}{{ . | markdownify }}{{ end }}</div>
+    </div>
+
+    <div class="section-content section-content--homepage">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <a href="http://waat.eu/" target="_blank" class="partner">
+              <img src="img/partners/Waat_logo.jpg" class="partner__image partner__image--bigger" alt="WAAT">
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <a href="https://altimi.com/" target="_blank" class="partner">
+            <img src="img/partners/altimi.png" class="partner__image partner__image--bigger" alt="Altimi Software House">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="http://www.deloittedigital.com/de/" target="_blank" class="partner">
+            <img src="img/partners/deloitte.png" class="partner__image" alt="Deloitte Digital">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="https://cofounderslab.com/" target="_blank" class="partner">
+            <img src="img/partners/cofounderslab.png" class="partner__image" alt="CoFoundersLab">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="https://www.prisma.io/" target="_blank" class="partner">
+            <img src="img/partners/prisma.png" class="partner__image" alt="Prisma">
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <a href="https://www.audi.com" target="_blank" class="partner">
+            <img src="img/partners/audi_red.png" class="partner__image" alt="Audi">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

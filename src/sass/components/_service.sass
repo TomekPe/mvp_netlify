@@ -1,0 +1,91 @@
+// Service
+//
+// This is the service listing element
+//
+// Markup: html/service.html
+//
+// Styleguide service
+
+// Component
+// --------------------------------------------------
+.service
+  @media (min-width: $screen-sm-min)
+    margin-bottom: 30px
+
+
+// Elements
+// --------------------------------------------------
+.service__link
+  color: #fff
+  display: block
+  margin-left: auto
+  margin-right: auto
+  overflow: hidden
+  position: relative
+
+  @media (max-width: $screen-xs-max)
+    max-width: 320px
+
+  &:focus,
+  &:hover
+    color: #fff
+    text-decoration: none
+
+    .service__overlay
+      background-color: rgba(0, 0, 0, 0.1)
+
+    .service__description
+      opacity: 1
+      filter: alpha(opacity=100)
+
+.service__overlay
+  height: 100%
+  width: 100%
+  max-width: 388px
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  margin: 0 auto
+  +transition(all .3s)
+
+.service__text
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 100%
+  padding: 0 15px
+  z-index: 1
+  +translate(-50%, -50%)
+
+.service__name
+  color: #fff
+  font-size: 22px
+  font-weight: bold
+  margin: 20px 0 5px
+  padding: 0
+  text-transform: uppercase
+
+.service__description
+  opacity: 0
+  filter: alpha(opacity=0)
+  font-family: $font-family-serif
+  font-size: $font-size-base
+  +transition(all .3s)
+
++breakpoint(tablet)
+  .service__link
+    img
+      margin: 0 auto
+
++breakpoint(desktop)
+  .service__wrapper
+    padding: 0
+
+
+// Modifiers
+// --------------------------------------------------
+.service--homepage
+  margin-bottom: 0
+  padding-left: 0
+  padding-right: 0

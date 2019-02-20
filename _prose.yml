@@ -1,0 +1,129 @@
+prose:
+  media: 'static/img'
+  metadata:
+    content/blog:
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Date in format yyyy-mm-dd."
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "The title that your readers see on the page."
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Name of the image eg. post.jpg. The image should be placed in to static/img/blog folder"
+      - name: "categories"
+        field:
+          element: "multiselect"
+          alterable: "true"
+          label: "Categories"
+          help: "list of categories eg. design, ux"
+    content/service:
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Date in format yyyy-mm-dd."
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "The title that your readers see on the page."
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Sub-title"
+          help: "Sub-title that will appear below title in the service blocks"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Name of the image eg. sem.jpg. The image should be placed in to static/img/services folder"
+      - name: "weight"
+        field:
+          element: "number"
+          label: "Weight"
+          help: "Compare weight to other services available in /content"
+    content/portfolio:
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Date in format yyyy-mm-dd."
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "The title that your readers see on the page."
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Sub-title"
+          help: "Sub-title that will appear below title in the service blocks"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Name of the image eg. aviation.jpg. The image should be placed in to static/img/portfolio folder"
+      - name: "images"
+        field:
+          element: "multiselect"
+          alterable: "true"
+          label: "Images"
+          help: "list of images eg. aviation-1.jpg, aviation-2.jpg"
+      - name: "website"
+        field:
+          element: "text"
+          label: "Website"
+          help: "Link to live website with http://"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          alterable: "true"
+          label: "Tags"
+          help: "list of tags eg. sem, siteaudit"
+          options:
+            - name: 'User Experience Design'
+              value: 'User Experience Design'
+            - name: 'Web Design'
+              value: 'Web Design'
+            - name: 'Web Development'
+              value: 'Web Development'
+            - name: 'Communication Campaign Implementation'
+              value: 'Communication Campaign Implementation'
+            - name: 'SEO'
+              value: 'SEO'
+            - name: 'Site Audit'
+              value: 'Site Audit'
+            - name: 'System Maintenance'
+              value: 'System Maintenance'
+            - name: 'User Testing'
+              value: 'User Testing'
+            - name: 'Live Streaming'
+              value: 'Live Streaming'
+    content/webdesign-portfolio:
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          help: "Date in format yyyy-mm-dd."
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          help: "The title that your readers see on the page."
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Sub-title"
+          help: "Sub-title that will appear below title in the service blocks"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Image"
+          help: "Name of the image eg. aviation.jpg. The image should be placed in to static/img/webdesign-portfolio folder"

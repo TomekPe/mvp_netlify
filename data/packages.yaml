@@ -1,0 +1,81 @@
+en:
+  - name: "Starter"
+    machine_name: basic
+    options:
+    - Discovery phase
+    - User experience
+    - Visual design
+    additional_info: "* Delivered within 2 weeks"
+    description: "Great for companies looking for a basic prototype and design
+    without investing too much resources into development."
+
+  - name: "Ignition"
+    machine_name: mvp
+    options:
+    - Discovery phase
+    - User experience
+    - Visual design
+    - Development
+    - Product delivery
+    additional_info: "* Delivered within 4 weeks"
+    description: "Fully functional product you can test with customers or show
+    to potential investors immediately."
+
+  - name: "Lift Off"
+    machine_name: mvp-plus
+    options:
+    - Discovery phase
+    - User experience
+    - Visual design
+    - Development
+    - Product delivery
+    - Promotional video production
+    additional_info: "* Delivered within 4 weeks"
+    description: "Your fully functional MVP with a custom-made promotional
+    video to start marketing your product."
+
+de:
+  - name: "Basic"
+    machine_name: basic
+    options:
+    - Discovery phase
+    - User Experience
+    - Visuelles Design
+    additional_info: "* lieferbar in 2 Wochen"
+    description: "Dieses Paket eignet sich besonders für Startups, die auf der
+    Suche nach einem einfachen Prototyp und Design sind und ihre Ressourcen
+    nicht in die Entwicklung investieren möchten. Du kannst dieses Paket auch
+    wählen, um unsere Dienstleistungen zu testen und dann zum MVP oder MVP Plus
+    Paket upgraden."
+
+  - name: "MVP"
+    machine_name: mvp
+    options:
+    - Discovery phase
+    - User Experience
+    - Visuelles Design
+    - Entwicklung
+    - Produktlieferung
+    additional_info: "* lieferbar in 4 Wochen"
+    description: "Dieses Paket beinhaltet die Entwicklung eines voll
+    funktionstüchtigen Produkts. Du kannst deine Startup-Idee  testen,
+    wertvolles Feedback von deinen Kunden bekommen oder die Idee potenziellen
+    Investoren präsentieren."
+
+  - name: "MVP Plus"
+    machine_name: mvp-plus
+    options:
+    - Discovery phase
+    - User Experience
+    - Visuelles Design
+    - Entwicklung
+    - Produktlieferung
+    - Produktion eines Promotionsvideos
+    additional_info: "* lieferbar in 4 Wochen"
+    description: "Dieses Paket hilft dir nicht nur bei der Darstellung des
+    vollen Potentials deines MVP, sondern schafft durch die Anfertigung eines
+    auf dich abgestimmten Promotionsvideos auch die ideale Ausgangssituation
+    für diverse Marketingstrategien. Durch ein Video kannst du deinem MVP einen
+    zusätzlichen Wert verleihen, weil du über die traditionelle
+    'Über uns'-Sparte hinaus einen innovativeren Weg wählst, um deine
+    Startup-Idee vorzustellen."

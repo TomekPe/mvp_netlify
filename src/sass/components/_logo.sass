@@ -1,0 +1,44 @@
+// Logo
+//
+// Placeholder for logo.
+//
+// Markup: html/logo.html
+//
+// Styleguide logo
+
+// Component
+// --------------------------------------------------
+.logo
+  width: 100px
+  margin-left: 15px
+  +breakpoint(tablet)
+    margin-left: 0
+  +breakpoint(desktop)
+    width: 130px
+
+// Elements
+// --------------------------------------------------
+.logo__head
+  font-size: 27px
+  line-height: 1em
+  font-weight: 300
+
+.logo__sub
+  font-size: 12px
+  line-height: 1em
+  font-weight: 100
+
+.navbar-shrink .logo
+  .logo__head
+    font-size: 22px
+    margin-top: 9px
+
+  .logo__sub
+    font-size: 10px
+
+// Modifiers
+.logo--waat
+  &:hover,
+  &:active,
+  &:focus
+    color: #c3252c !important

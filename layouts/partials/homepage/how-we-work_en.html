@@ -1,0 +1,28 @@
+{{ "<!-- HOW WE WORK SECTION -->" | safeHTML }}
+<div id="howitworks" class="section section--how-we-work">
+  <div class="how-we-work" id="how-we-work">
+    <div class="how-we-work__left">
+
+    </div>
+
+    <div class="how-we-work__right">
+      <div class="section-heading section-heading--bottom-margin text-center">
+        <h2 class="section-heading__primary">{{ with .Site.Params.en.homepage.howwework.title }}{{ . }}{{ end }}</h2>
+        <div class="section-heading__secondary text-muted">{{ with .Site.Params.en.homepage.howwework.subtitle }}{{ . | markdownify }}{{ end }}</div>
+      </div>
+
+      <div class="how-we-work__items">
+        {{ range $index, $element := $.Site.Data.howwework.en }}
+        <div class="how-we-work__item">
+          <div class="icon-circle bg--{{ .iconcolor }}">
+            <div class="icon icon--{{ .icon }}"></div>
+          </div>
+          <div class="how-we-work__name">{{ .name }}</div>
+
+          <div class="how-we-work__description">{{ .description }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

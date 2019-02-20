@@ -1,0 +1,31 @@
+.language-switcher
+  .navbar-nav
+    margin-left: 0
+    margin-right: 0
+    margin-top: -3px
+
+    +breakpoint(tablet)
+      margin-top: 5px
+
+  +breakpoint(tablet)
+    margin-left: 50px
+
+  li
+    margin-right: 15px !important
+    padding: 0 !important
+    text-align: right !important
+
+    &:not(:first-child)
+      float: left
+
+    & > a
+      color: $blue !important
+      font-family: $font-family-sans-condensed
+      margin-top: -3px
+
+      &:hover
+        color: #fff !important
+
+.navbar-shrink .language-switcher
+  .navbar-nav
+    margin-top: 10px

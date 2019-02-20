@@ -1,0 +1,33 @@
+// Tags
+//
+// Markup: html/tags.html
+//
+// Styleguide tags
+
+// Component
+// --------------------------------------------------
+.tags {
+
+}
+
+// Elements
+// --------------------------------------------------
+.tags__title {
+  color: #989c9f;
+}
+
+.tags__list {
+  list-style: none;
+  padding: 0;
+}
+
+.tags__list-item {
+  display: inline-block;
+  background-color: #ddd;
+  border-radius: 5px;
+  color: #fff;
+  font-size: $font-size-small;
+  padding: 3px 7px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

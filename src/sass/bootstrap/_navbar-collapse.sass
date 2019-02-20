@@ -1,0 +1,133 @@
+// Navigation
+//
+// Navigation component
+//
+// Markup: html/navbar-collapse.html
+//
+// Styleguide navbar-collapse
+
+// Elements
+.navbar-collapse
+  display: block
+  visibility: visible
+  background: #fff
+  position: fixed
+  top: 0
+  right: -100%
+  z-index: 999
+  height: 100%
+  max-height: none !important
+  padding: 0
+  margin-right: 0 !important
+  margin-left: 0 !important
+  overflow: auto
+  width: 230px
+  border: none
+  +transition(all 1s ease)
+
+.navbar-collapse > nav
+  float: right
+  margin-right: -15px
+
+.navbar-collapse__title
+  text-transform: uppercase
+  font-size: 16px
+  height: 40px
+  line-height: 40px
+  padding-left: 15px
+  padding-right: 25px
+  margin: 15px 0
+  cursor: pointer
+
+  .icon
+    position: absolute
+    top: 28px
+    right: 22px
+
+
+.navbar-collapse__link
+  color: $link-color !important
+  font-size: $font-size-small
+  font-weight: normal
+  line-height: $line-height-base !important
+  padding: 0 0 2px !important
+
+  &.active,
+  &.active-trail
+    color: #fff !important
+    background: none !important
+    font-weight: 600
+    border-bottom: 2px $gray-darkest solid
+
+    &:hover
+      color: $link-color !important
+
+.navbar-collapse--primary,
+.navbar-collapse--secondary
+  display: block
+
+.navbar-collapse__item
+  display: block
+  text-align: left
+  padding: 0
+
+.navbar-collapse__link
+  border-bottom: 1px $gray-light solid
+  display: block
+  padding: 15px !important
+
+  &.active
+    background-color: $blue-dark !important
+
+
+  &:hover
+    background-color: $green !important
+
+    .navbar-collapse__label
+      color: #fff !important
+
+
+.navbar-collapse--primary .first .navbar-collapse__link
+  border-top: 1px $gray-light solid
+
++breakpoint(tablet)
+  .navbar-collapse
+    background-color: transparent
+    position: static
+    width: auto
+    +transition(none)
+
+  .navbar-collapse__title
+    display: none
+
+  .navbar-collapse__item
+    margin-left: 35px
+
+    &:first-child
+      margin-left: 0
+
+  .navbar-collapse__link
+    &:hover
+      border-bottom: 2px $gray-darkest solid
+
+
+    &.active,
+    &.active-trail
+      color: $link-color !important
+
+.is-sidemenu
+  overflow: hidden
+
+  .navbar-collapse
+    right: 0
+
+  .navbar-collapse__overlay
+    background-color: rgba(0, 0, 0, 0.3)
+    width: 100%
+    height: 100%
+    min-height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 998
+    +transition(background-color 0.3s ease-out)

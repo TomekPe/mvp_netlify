@@ -1,0 +1,217 @@
+baseurl:                    "/"
+# include content marked as draft
+buildDrafts:                false
+languageCode: "en-us"
+# "yaml", "toml", "json"
+metaDataFormat:             "yaml"
+# Pluralize titles in lists using inflect
+pluralizeListTitles:         false
+
+# Navigation
+menu:
+  main_en:
+    - name: "Home"
+      weight: 1
+      identifier: "home"
+      url: "/#page-top"
+    - name: "Offer"
+      weight: 2
+      identifier: "about"
+      url: "/#about"
+    - name: "Packages"
+      weight: 3
+      identifier: "packages"
+      url: "/#packages"
+    - name: "How it works"
+      weight: 4
+      identifier: "howitworks"
+      url: "/#howitworks"
+    - name: "Clients"
+      weight: 5
+      identifier: "ourclients"
+      url: "/#our-clients"
+    - name: "Contact"
+      weight: 6
+      identifier: "contact"
+      url: "/#contact"
+
+  main_de:
+    - name: "Home"
+      weight: 1
+      identifier: "home"
+      url: "/de#page-top"
+    - name: "Offer"
+      weight: 2
+      identifier: "about"
+      url: "/de#about"
+    - name: "Packages"
+      weight: 3
+      identifier: "packages"
+      url: "/de#packages"
+    - name: "How it works"
+      weight: 4
+      identifier: "howitworks"
+      url: "/de#howitworks"
+    - name: "Clients"
+      weight: 5
+      identifier: "ourclients"
+      url: "/de#our-clients"
+    - name: "Contact"
+      weight: 6
+      identifier: "contact"
+      url: "/de#contact"
+
+  language:
+    - name: "EN"
+      weight: 1
+      identifier: "en"
+      url: "/"
+    - name: "DE"
+      weight: 2
+      identifier: "de"
+      url: "/de"
+
+
+params:
+  # ENGLISH TRANSLATIONS
+  en:
+    title: "MVP Space - Build an MVP for your startup"
+    description: "Professional and personalised services that will help you
+    build an MVP (Minimum Viable Product) for your startup quickly and
+    efficiently."
+    keywords: "web development for startups, MVP, Minimum Viable Product,
+    startups, meteor.js, lean startups, web applications, mobile applications"
+
+
+    # HOMEPAGE
+    homepage:
+
+      # The page header section
+      header:
+        # To change the background image of the header, replace 'homepage-header-bg.jpg' in
+        # the 'static/img' folder.
+        title: "Build your MVP."
+        subtitle: "<strong>Quickly and efficiently.</strong>"
+        description: "Test a business idea with your target audience or show its potential to your investors."
+        buttonText: "Get a quote"
+
+      # About section
+      about:
+        title: "We build mobile and web applications"
+        body: "We can help turn your idea into reality with a Minimum Viable
+        Product (MVP) for mobile or web. Save time, money and risk with a
+        streamlined version of your product featuring just the core features,
+        so you can test it with your target audience or pitch it directly to investors.
+        We build systems that can be scaled up so you can gain valuable insight
+        and funding to develop further. It’s time to find out just how strong your idea is."
+        contactButtonText: "Contact us"
+
+
+      # Packages section
+      packages:
+        title: "Build your MVP"
+        subtitle: "Tell us what you need in your MVP and we'll build it"
+        packageText: "Package"
+        contactButtonText: "Get a quote"
+        howweworkButtonText: "How it works"
+
+
+      # How we work section
+      howwework:
+        title: "How it works"
+        subtitle: "Step-by-step guide of the MVP Space process"
+
+
+      # Our clients section
+      our_clients:
+        title: "Our projects"
+        subtitle: "Discover our growing portfolio"
+
+
+      # Our clients section
+      partners:
+        title: "Our partners"
+        subtitle: "We cooperate with"
+
+
+      # Contact section
+      contact:
+        title: "Contact us"
+        description: "Use the form below to get in touch with us. We will get back
+        to you as soon as possible and provide you with an individual offer for
+        your project including a quote. A non-disclosure agreement (NDA) can be
+        signed anytime if necessary."
+        buttonText: "Get a quote"
+
+  # GERMAN TRANSLATIONS
+  de:
+    title: "MVP Space - MVP für dein Startup"
+    description: "Professionelle und individuell abgestimmte Dienstleistungen
+    für Startups, die ihre Idee durch die Herstellung eines MVP (Minimal Viable
+    Product) innerhalb von 4 Wochen umsetzen wollen."
+    keywords: "Webentwicklung für Startups, MVP, Minimum Viable Product,
+    Startups, meteor.js, js, Lean Startups, Web-Agentu"
+
+
+    # HOMEPAGE
+    homepage:
+
+      # The page header section
+      header:
+        # To change the background image of the header, replace 'homepage-header-bg.jpg' in
+        # the 'static/img' folder.
+        title: "Wir entwickeln MVPs für Startups."
+        subtitle: "<strong>Schnell und effizient.</strong>"
+        description: ""
+        buttonText: "Finde mehr heraus"
+
+      # About section
+      about:
+        title: "Unser Angebot"
+        body: "Wir bieten professionelle und individuell abgestimmte
+        Dienstleistungen an, mit Hilfe derer du deine Startup-Idee durch die
+        Herstellung eines MVP (Minimal Viable Product) - voll funktionstüchtigen
+        und die Kernfunktionen präsentierenden Produktes - umsetzen kannst. Du
+        bekommst so die Möglichkeit, deine Idee mit unterschiedlichen Zielgruppen
+        auszuprobieren oder sie zukünftigen Investoren vorzustellen. Eine
+        Zusammenarbeit mit uns bedeutet für dich nicht nur ein engagiertes und
+        motiviertes Team, sondern auch schnelle Resultate (2-4 Wochen) und eine
+        transpartente Preisstruktur."
+        contactButtonText: "Kontakt"
+
+
+      # Packages section
+      packages:
+        title: "Pakete"
+        subtitle: "Wähle ein Paket, das am besten deinen Bedürfnissen entspricht"
+        packageText: "Paket"
+        contactButtonText: "Ein Angebot bekommen"
+        howweworkButtonText: "Unsere Arbeitsweise"
+
+
+      # How we work section
+      howwework:
+        title: "Unsere Arbeitsweise"
+        subtitle: "Schritt für Schritt durch den Prozess"
+
+
+      # Our clients section
+      our_clients:
+        title: "Our projects"
+        subtitle: "Discover our growing portfolio"
+
+
+      # Our clients section
+      partners:
+        title: "Our partners"
+        subtitle: "We cooperate with"
+
+
+      # Contact section
+      contact:
+        title: "Kontakt"
+        description: "Use the form below to get in touch with us. We will get back
+        to you as soon as possible and provide you with an individual offer for
+        your project including a quote. A non-disclosure agreement (NDA) can be
+        signed anytime if necessary."
+        buttonText: "Ein Angebot bekommen"

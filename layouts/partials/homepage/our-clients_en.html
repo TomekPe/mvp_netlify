@@ -1,0 +1,57 @@
+{{ "<!-- OUR CLIENTS SECTION -->" | safeHTML }}
+<div class="section section--our-clients bg--1" id="our-clients">
+  <div class="container">
+    <div class="section-heading section-heading--bottom-margin text-center">
+      <h2 class="section-heading__primary">{{ with .Site.Params.en.homepage.our_clients.title }}{{ . }}{{ end }}</h2>
+      <div class="section-heading__secondary text-muted">{{ with .Site.Params.en.homepage.our_clients.subtitle }}{{ . | markdownify }}{{ end }}</div>
+    </div>
+
+    <div class="section-content section-content--homepage">
+      <div class="our-clients__carousel">
+        {{ range $index, $element := $.Site.Data.customers.en }}
+        <div class="our-clients__item">
+          <div class="row">
+            <div class="col-lg-7 col-lg-push-5">
+              <div class="our-clients__image">
+                <img class="img-responsive" src="/img/customers/{{ .image }}" />
+              </div>
+              <ul class="our-clients__tags">
+                {{ range .tags }}
+                <li class="our-clients__tag">{{ . | safeHTML }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            <div class="col-lg-5 col-lg-pull-7">
+              <div class="our-clients__name">{{ .name }}</div>
+              <div class="our-clients__description">{{ .description }}</div>
+              {{ if .url }}
+              <a class="our-clients__button btn btn-primary btn-sm" href="{{ .url }}" rel="nofollow" target="_blank">See project live</a>
+              {{ end }}
+              {{ if .comment }}
+              <div class="our-clients__comment">{{ .comment }}</div>
+              {{ end }}
+              {{ if .comment_author }}
+              <div class="our-clients__comment-author">
+                {{ if .comment_author_photo }}
+                <div class="our-clients__comment-author-photo">
+                  <img class="img-responsive" src="/img/customers/{{ .comment_author_photo }}" />
+                </div>
+                {{ end }}
+                <div class="our-clients__comment-author-text">
+                  <div class="our-clients__comment-author-name">{{ .comment_author }}</div>
+                  {{ if .comment_author_position }}
+                  <div class="our-clients__comment-author-position">{{ .comment_author_position }}</div>
+                  {{ end }}
+                </div>
+              </div>
+              {{ end }}
+            </div>
+         </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ with .Site.Params.en.homepage.our_clients.body }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+  </div>
+</div>

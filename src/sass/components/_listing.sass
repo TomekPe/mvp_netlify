@@ -1,0 +1,373 @@
+// Listing
+//
+// Various types of listings that can be used on every project
+// This should be customised per project
+//
+// Styleguide 4.10
+
+// Default listing styling and modifiers
+//
+// Markup: html/listing.html
+//
+// default                         - Default listing
+// .listing--condensed             - Listing with reduced spacing between items
+// .listing--zebra                 - Listing with different background color on even items
+// .listing--no-separators         - Removes separator between every listing item
+// .listing--separators-dashed     - Adds dashed border separator between every listing item
+// .listing--column-second-above   - Listing where second column is always above the main listing item content
+// .listing--row-two               - Listing with row two grid
+// .listing--row-three             - Listing with row three grid
+//
+// Styleguide 4.10.1
+
+$listing-media-width-phone: 160px
+$listing-media-height-phone: 145px
+$listing-media-width-desktop: 270px
+$listing-media-height-desktop: 145px
+
+// Component
+// --------------------------------------------------
+
+
+// Elements
+// --------------------------------------------------
+.listing__item
+  border-bottom: 1px $gray-lighter solid
+  padding-bottom: 30px
+  &:last-child
+    padding-bottom: 0
+    border-bottom: none
+
+.listing__item-link
+  display: block
+  overflow: hidden
+  color: $text-color
+  position: relative
+
+  &:hover,
+  &:focus
+    color: $text-color
+    text-decoration: none
+    .listing__overlay
+      background: rgba(0, 0, 0, 0.6)
+
+      & > span
+        opacity: 1
+
+.listing__item
+  overflow: hidden
+  padding-top: 30px
+  p
+    margin: 0
+    text-align: justify
+
+
+.listing__item-column-second
+  width: 100%
+  margin-bottom: 10px
+  text-align: center
+  max-height: 140px
+
+.listing__item-column-main
+  border-bottom: 1px $gray-lighter solid
+  border-right: 1px $gray-lighter solid
+  border-left: 1px $gray-lighter solid
+  margin-right: 1px
+
+.listing__overlay
+  color: #fff
+  background: rgba(0, 0, 0, 0)
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  +transition(all 0.3s)
+
+  & > span
+    position: absolute
+    top: 50%
+    opacity: 0
+    +translate(-50%, -50%)
+    +transition(all 0.3s)
+
+.listing__item-text
+  overflow: hidden
+  padding: 0 30px 35px
+
+  p
+    font-size: 14px
+
+.listing__item-title
+  margin-top: 0
+  margin-bottom: 15px
+  padding-bottom: 0
+  text-transform: none
+
+  a
+    color: $gray-base
+
+  h2, h3
+    margin: 0 !important
+
+
+
+.listing__item-meta
+  font-size: $font-size-small
+  font-family: "Crimson text"
+  letter-spacing: 0.5px
+  color: #a5a5a5
+  width: 100%
+  margin-bottom: 15px
+  display: block
+
+
+.listing__item-footer
+  margin-top: $line-height-computed / 2
+  overflow: hidden
+
+
+.listing__icon
+  color: $brand-primary
+  font-size: $font-size-large
+  position: relative
+  top: 2px
+
+
++breakpoint(phone)
+  .listing__item-column-second
+    float: left
+    margin-right: 30px
+    max-width: $listing-media-width-phone
+    overflow: hidden
+
+    .listing__item-media-icon
+      width: 40px
+      height: 40px
+      background-color: $gray-lightest
+      text-align: center
+      .icon
+        +icon-size(40px)
+        margin-top: -6px
+
+// Modifiers
+// --------------------------------------------------
+.listing--condensed
+  .listing__item
+    padding-top: 15px
+    font-size: $font-size-small
+    h3.listing__item-title
+      font-size: $font-size-base
+
+    h4.listing__item-title
+      font-size: $font-size-small
+
+  .listing__item-meta
+    font-family: $font-family-sans-condensed
+    font-weight: $headings-font-weight
+
+
+  &.listing--separators-dashed
+    .listing__item
+      padding-bottom: 15px
+
+      &:last-child
+        padding-bottom: 0
+
+.listing--column-second-above
+  .listing__item-column-second
+    max-width: none
+    float: none
+    margin-right: 0
+    margin-bottom: 0
+    width: 100%
+    img
+      width: 100%
+
+  .listing__item-column-main
+    padding-top: 30px
+
+
+.listing--zebra
+  .listing__item:nth-of-type(even)
+    background-color: $gray-lightest
+
+
+.listing--no-separators
+  .listing__item
+    border-bottom: none
+    padding-bottom: 0
+
+
+.listing--separators-dashed
+  .listing__item
+    border-bottom: 1px $gray-light dashed
+
+
+// Listing middle align
+//
+// Markup: html/listing-middlealign.html
+//
+// Styleguide 4.10.2
+
+.listing--middlealign
+  font-size: $font-size-small
+  .listing__item
+    padding: 20px 0
+    width: 100%
+    +middle-align()
+    &:first-child
+      padding-top: 0
+
+    .listing__item-col
+      &:nth-of-type(2)
+        min-width: 25%
+
+      &:nth-of-type(3)
+        min-width: 20%
+
+      &:nth-of-type(4)
+        min-width: 10%
+
+.listing--middlealign .icon
+  font-size: $font-size-h1
+  top: $font-size-base
+
+
+// Listing numbered
+//
+// Listing with big full height numbers at the left.
+//
+// Markup: html/listing-numbered.html
+//
+// Styleguide 4.10.3
+
+
+// Component
+// --------------------------------------------------
+.listing--numbered
+  counter-reset: listing--numbered
+  .listing__item
+    +arrow($gray-light, #fff, 'left', 'in', 10px, 50px)
+    margin: 35px 0 15px 80px
+    padding-bottom: 0
+    position: relative
+    overflow: visible
+    border-bottom: none
+
+  .listing__item-text
+    padding-left: 55px
+    margin-bottom: $line-height-computed
+    &:before
+      content: counter(listing--numbered)
+      counter-increment: listing--numbered
+      position: absolute
+      left: -80px
+      top: 50%
+      width: 80px
+      height: 60px
+      margin: -30px 0
+      text-align: center
+      font-size: $font-size-h1 * 4/5
+
+    p:not(:last-child)
+      margin-bottom: $line-height-computed / 2
+
+
+  .listing__item-title
+    margin-bottom: $line-height-computed / 2
+    font-size: $font-size-h3 + 3
+
+  .listing__item-footer
+    background-color: $gray-lightest
+    padding: 0 10px 0 35px
+    a, button
+      color: $brand-primary
+
+.listing--numbered.listing--condensed
+  .listing__item
+    +arrow($gray-light, #fff, 'left', 'in', 5px, 10px)
+    padding: 5px 10px 5px 0
+    margin: 5px 0 5px 30px
+
+  .listing__item-text
+    padding-left: 30px
+    margin-bottom: 0
+    &:before
+      left: -30px
+      width: 30px
+      height: 20px
+      margin: -20px 0
+      font-size: $font-size-large
+      text-align: left
+
+
+// Listing two column layouts
+//
+// Markup: html/listing-columns-two.html
+//
+// Styleguide 4.10.4
+
+// Listing three column layouts
+//
+// Markup: html/listing-columns-three.html
+//
+// Styleguide 4.10.5
+
+.listing--columns-three,
+.listing--columns-two,
+.listing--row-three,
+.listing--row-two
+  p
+    padding: 0
+
+.listing--columns-three,
+.listing--columns-two,
+.listing--row-three,
+.listing--row-two
+  +make-row()
+
+.listing--columns-two
+  .listing__column
+    margin-bottom: 20px
+    +make-sm-column(6)
+
+
+.listing--columns-three
+  .listing__column
+    +make-md-column(4)
+
+
+.listing--row-two
+  .listing__item
+    padding-top: 0
+    padding-bottom: 30px
+    +make-md-column(6)
+
+
+.listing--row-three
+  .listing__item
+    margin-top: 15px
+    +make-md-column(4)
+
+.listing__column
+  .listing__item
+    &:last-child
+      padding-bottom: 30px
+      border-bottom: 1px $gray-lighter solid
+
+  &:last-child
+    .listing__item
+      &:last-child
+        padding-bottom: 0
+        border-bottom: none
+
++breakpoint(tablet)
+  .listing--columns-two
+    .listing__column
+      margin-bottom: 0
+
+  .listing--row-two,
+  .listing--row-three
+    .listing__item
+      border-bottom: none

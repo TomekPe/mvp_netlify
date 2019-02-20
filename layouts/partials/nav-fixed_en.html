@@ -1,0 +1,30 @@
+{{ "<!-- Navigation -->" | safeHTML }}
+<nav class="navbar navbar-default navbar-black">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="logo pull-left" href="/"><img src="{{ "/img/logo.svg" | absURL }}" /></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <h3 class="navbar-collapse__title">
+        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        Navigation
+        <span class="icon icon--close"></span>
+      </h3>
+      <ul class="nav navbar-nav navbar-right">
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+        <li class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}active{{end}}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="navbar-collapse__overlay"></div>
+  </div>
+</nav>

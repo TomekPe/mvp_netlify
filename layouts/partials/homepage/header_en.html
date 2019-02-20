@@ -1,0 +1,20 @@
+{{ "<!-- HEADER SECTION -->" | safeHTML }}
+<header class="header header--homepage">
+  <div class="container">
+    <div class="header__content text-center">
+      <div class="header__text">
+        <h1>
+          {{ with .Site.Params.en.homepage.header.title }}{{ . | safeHTML }}{{ end }}
+        </h1>
+        {{ with .Site.Params.en.homepage.header.subtitle }}{{ . | safeHTML }}{{ end }}
+      </div>
+      <div class="header__subtext">
+        {{ with .Site.Params.en.homepage.header.description }}{{ . | safeHTML }}{{ end }}
+      </div>
+
+      <a class="header__button typeform-share button btn btn-warning btn-sm" href="https://kris183.typeform.com/to/ezCahW" data-mode="1" target="_blank">{{ with .Site.Params.en.homepage.header.buttonText }}{{ . }}{{ end }}</a>
+
+      {{ partial "blocks/social.html" . }}
+    </div>
+  </div>
+</header>

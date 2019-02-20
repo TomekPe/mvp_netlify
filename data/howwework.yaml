@@ -1,0 +1,99 @@
+en:
+  - name: "Your project idea"
+    icon: "bulb"
+    iconcolor: "blue-light"
+    description: "Use the chat or the contact form below to speak to us about
+    your MVP idea. We will get back to you as soon as possible and provide you
+    with an individual offer for your MVP including a quote. A non-disclosure
+    agreement (NDA) can be signed anytime if necessary."
+  - name: "Discovery Phase"
+    icon: "compass"
+    iconcolor: "blue-light"
+    description: "This is the first and most crucial phase of building your MVP
+    and will help us fully understand your vision. Together with you, we will
+    assess your idea, define the requirements of your project and plan the next
+    steps in the process, including clear deliverables."
+  - name: "User Experience"
+    icon: "user"
+    iconcolor: "blue-light"
+    description: "During this phase, we will provide you with a fully clickable
+    prototype created using the best practices and latest trends in user
+    experience. At the end of the UX process, your project will already have a
+    solid base, which is necessary to begin the design process."
+  - name: "Visual Design"
+    icon: "paints"
+    iconcolor: "blue-light"
+    description: "Once you have validated the prototype, our designers will
+    prepare several design proposals that will perfectly capture your project
+    vision. Based on your preference, we will then focus on one design and make
+    further iterations, if necessary. Once approved, we will deliver a design
+    that’s ready for implementation."
+  - name: "Development"
+    icon: "code"
+    iconcolor: "red"
+    description: "This step involves building your MVP. By selecting the
+    technology that best suits the needs of your project, the end-product will
+    be easily extendable and scalable. We always keep the development process
+    as transparent as possible, which means that you will be able to follow its
+    progress."
+  - name: "Product Delivery"
+    icon: "box"
+    iconcolor: "red"
+    description: "At this point, your MVP is ready. We will produce the
+    deliverable the way you want it by making it live and handing the project to
+    you. During this phase, we will test the product several times making sure
+    it is stable and sustainable."
+  - name: "Video Production"
+    icon: "video-camera"
+    iconcolor: "blue-dark"
+    description: "This is an additional service that includes the preparation
+    of a script, storyboards, voice-over, video production and post-production,
+    and starts just after the discovery phase. It is carried out simultaneously
+    with the other steps."
+
+de:
+  - name: "Discovery phase"
+    icon: "bulb"
+    iconcolor: "blue-light"
+    description: "Dies ist die erste und wichtigste Phase bei der Herstellung
+    deines MVP und hilft uns dabei, deine Vision in vollem Umfang zu begreifen.
+    Wir werden deine Idee zusammen auswerten, die Projektanforderungen festlegen
+    und die nächsten Schritte - inklusive klarer Ergebnisse - planen."
+  - name: "User Experience"
+    icon: "user"
+    iconcolor: "blue-light"
+    description: "Während dieser Phase bekommst du von uns voll klickbare
+    Wireframes, die auf der Grundlage bewährtester Praktiken und neuester Trends
+    im Bereich User Experience erstellt werden. Am Ende des UX-Prozesses wird
+    dein Produkt ein solides Fundament haben, was notwendig ist, um den
+    Design-Prozess zu beginnen."
+  - name: "Visuelles Design"
+    icon: "paints"
+    iconcolor: "blue-light"
+    description: "Nachdem du die Wireframes geprüft hast, werden unsere Designer
+    unterschiedliche Vorschläge anfertigen, die deine Projektvision perfekt
+    erfassen. Ausgehend von deinen Vorlieben werden wir uns auf ein Design
+    konzentrieren und, wenn nötig,  weitere Iterationen herstellen. Sobald du
+    es abgenommen hast, liefern wir dir ein anwendungsbereites Design."
+  - name: "Entwicklung"
+    icon: "code"
+    iconcolor: "red"
+    description: "Dieser Schritt beinhaltet die Fertigung deines MVP. Durch die
+    Auswahl von Technologien, die den Bedürfnissen deines Projekts am besten
+    entsprechen, machen wir das Endprodukt skalierbar und erweiterungsfähig.
+    Wir sorgen während des Entwicklungsprozesses für größtmögliche Transparenz
+    und ermöglichen dir dadurch, die Fortschritte zu verfolgen."
+  - name: "Lieferung des Produkts"
+    icon: "box"
+    iconcolor: "red"
+    description: "An dieser Stelle ist dein MVP fertig. Wir werden es wie von
+    dir gewünscht produzieren, indem wir es online stellen und dir das Projekt
+    übergeben. Während dieser Phase testen wir das Produkt mehrere Male um
+    sicherzugehen, dass es stabil und nachhaltig ist."
+  - name: "Videoproduktion"
+    icon: "video-camera"
+    iconcolor: "blue-dark"
+    description: "Dies ist ein zusätzlicher Service und beinhaltet die
+    Vorbereitung eines Scripts, die Erstellung von Storyboards, eines
+    Voice-overs, die Videoproduktion und Nachbearbeitung. Er beginnt kurz nach
+    der Discovery Phase und erfolgt gleichzeitig mit den anderen Schritten."

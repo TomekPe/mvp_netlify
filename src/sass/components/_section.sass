@@ -1,0 +1,34 @@
+// Section
+//
+// This is the section element
+//
+// Markup: html/section.html
+//
+// Styleguide section
+
+// Component
+// --------------------------------------------------
+.section
+  padding-top: 70px
+  padding-bottom: 70px
+  position: relative
+
+
+// Modifiers
+// --------------------------------------------------
+.section--no-bottom-padding
+  padding-bottom: 0
+
+.section--about
+  p
+    line-height: 1.875em
+
+.section--packages
+  padding-bottom: 0
+
+  .section-heading
+    +breakpoint(desktop)
+      margin-bottom: 70px
+
+.section--how-we-work
+  padding: 0
