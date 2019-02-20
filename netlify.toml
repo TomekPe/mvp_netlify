@@ -29,6 +29,18 @@ HUGO_VERSION = "0.54.0"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
+[Languages]
+[Languages.en]
+title = "Documentation for Hugo Learn Theme"
+weight = 1
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fab fa-github'></i> Github repo"
+identifier = "ds"
+url = "/en"
+weight = 10
+
 [Languages.de]
 languageName = "DE"
 identifier = "de"
